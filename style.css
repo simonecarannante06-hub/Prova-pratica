@@ -3,7 +3,10 @@
   margin: 0;
   padding: 0;
 }
-
+img {
+  display: inline-block;
+  max-width: 100%;
+}
 @font-face {
   font-family: "Mona Sans";
   src: url("assets/fonts/mona-sans.woff2");
@@ -18,6 +21,29 @@
   font-display: swap;
   font-feature-settings: "liga" 0;
 }
+:root {
+  --font-body: "Mona Sans";
+  --color-black: #000;
+  --color-white: #fff;
+  --color-border-muted: #191f1b;
+  --conteiner-width: 1280px;
+  --spacing-64: 64px;
+}
 body {
-  font-family: "Mona Sans";
+  font-family: var(--font-body);
+}
+.hero {
+  background: var(--color-black);
+  color: var(--color-white);
+  text-align: center;
+}
+.conteiner {
+  max-width: var(--conteiner-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-content {
+  padding: var(--spacing-64);
+  border-left: 1px solid var(--color-border-muted);
+  border-right: 1px solid var(--color-border-muted);
 }
