@@ -3,13 +3,15 @@
   margin: 0;
   padding: 0;
 }
+
 img {
   display: inline-block;
   max-width: 100%;
 }
+
 @font-face {
   font-family: "Mona Sans";
-  src: url("assets/fonts/mona-sans.woff2");
+  src: url("assets/fonts/mona-sans.woff2") format("woff2");
   font-weight: 200 900;
   font-display: swap;
   font-feature-settings: "liga" 0;
@@ -21,29 +23,80 @@ img {
   font-display: swap;
   font-feature-settings: "liga" 0;
 }
+
 :root {
   --font-body: "Mona Sans";
+  --font-mono: "Mona Sans Mono";
   --color-black: #000;
   --color-white: #fff;
+  --color-muted: #a4aea6;
   --color-border-muted: #191f1b;
-  --conteiner-width: 1280px;
+  --color-cursor: pink;
+  --container-width: 1280px;
   --spacing-64: 64px;
+  --heading-1-font-size: 56px;
+  --heading-1-line-height: 1.1;
+  --eyebrow-font-size: 14px;
+  --text-200-font-size: 16px;
+  --text-200-line-height: 1.5;
 }
+
 body {
   font-family: var(--font-body);
 }
+
 .hero {
+  --hero-text-max-width: 600px;
   background: var(--color-black);
   color: var(--color-white);
   text-align: center;
 }
-.conteiner {
-  max-width: var(--conteiner-width);
+
+.container {
+  max-width: var(--container-width);
   margin-left: auto;
   margin-right: auto;
 }
+
 .hero-content {
   padding: var(--spacing-64);
   border-left: 1px solid var(--color-border-muted);
   border-right: 1px solid var(--color-border-muted);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.eyebrow {
+  text-align: center;
+  font-size: var(--eyebrow-font-size);
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.43em;
+  justify-content: center;
+}
+.eyebrow-cursor rect {
+  fill: var(--color-cursor);
+}
+.heading {
+  font-weight: 400;
+}
+.heading-size-1 {
+  font-size: var(--heading-1-font-size);
+  line-height: var(--heading-1-line-height);
+}
+.text-size-200 {
+  font-size: var(--text-200-font-size);
+  line-height: var(--text-200-line-height);
+}
+.hero-text {
+  max-width: var(--hero-text-max-width);
+}
+.button-group {
+  display: flex;
+  gap: 1em;
 }
