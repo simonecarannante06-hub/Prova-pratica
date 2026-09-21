@@ -100,3 +100,6 @@ body {
   display: flex;
   gap: 1em;
 }
+.hero-image {
+  margin-top: calc(64px - var(--hero-content-gap));
+}
