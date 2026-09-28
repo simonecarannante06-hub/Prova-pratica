@@ -7,7 +7,7 @@
 img {
   display: inline-block;
   max-width: 100%;
-  align-self:;
+  align-self: 0px;
 }
 
 @font-face {
@@ -122,6 +122,10 @@ body {
 
 .hero-image {
   margin-top: calc(64px - var(--hero-content-gap));
+ width: 100%;
+  height: 600px;
+   object-fit:cover;
+  display: block;
 }
 .button {
   text-decoration: none;
