@@ -44,6 +44,14 @@ img {
   --color-button-secondary-bg: rgba(255, 255, 255, 0.12);
   --border-color: rgba(255, 255, 255, 0.06);
   --color-focus: #08872b;
+  --base-size-16:16px;
+  --brand-color-text-muted:#58635B;
+  --base-size-24:24px;
+--brand-borderRadius-medium:8px;
+--brand-Card-padding-inline:20px;
+--brand-borderWidth-thin:1px;
+--base-size-28:28px;
+--brand-color-accent-primary:#0D6731;
 }
 
 body {
@@ -177,8 +185,88 @@ body {
 .project-biography {
   display: flex;
   gap: 48px;
+  border-bottom: solid 0.3px #000;
+  padding-bottom:17px;
 }
 .info-label {
   font-size: 14px;
   color: #58635b;
 }
+.case-study{
+  padding-top: var(--base-size-24);
+  flex-direction: column;
+text-align: center;
+display: flex;
+align-items: center;
+
+}
+
+.eyebrow-mito{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.42em;
+  color:var(--brand-color-text-muted);
+  font-family: "Mona Sans Mono";
+  font-size: 14px;
+  font-weight: 400;
+
+}
+.text-hero-bottom{
+  font-family: "Mona Sans";
+font-size: 28px;
+font-weight: 500;
+color: #000;
+padding: var(--base-size-16);
+}
+.text-mito{
+  font-family: "Mona Sans";
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--brand-color-text-muted);
+  padding: var(--base-size-16);
+  padding-bottom: var(--base-size-24);
+}
+
+.image-hero{
+  width: 1280px;
+  height: 1115px;
+  border-radius: var(--brand-borderRadius-medium);
+  border:1px;
+  padding-top: var(--base-size-24);
+
+}
+.image-hero2{
+  width: 1280px;
+  height: 1115px;
+  border-radius: var(--brand-borderRadius-medium);
+  border:1px;
+  padding-top: var(--base-size-24);
+
+}
+.image-hero3{
+  width: 1280px;
+  height: 1115px;
+  border-radius: var(--brand-borderRadius-medium);
+  border:1px;
+  padding-top: var(--base-size-24);
+
+}
+.button-tertiary{
+  border: var(--brand-borderWidth-thin);
+  background-color: #fff;
+}
+.title-text-4{
+  font-family: "Mona Sans";
+  font-size: 20px;
+  font-weight: 400;
+}
+.tab-button1{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+}
+}
+
