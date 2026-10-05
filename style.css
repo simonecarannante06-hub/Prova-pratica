@@ -255,18 +255,36 @@ padding: var(--base-size-16);
 .button-tertiary{
   border: var(--brand-borderWidth-thin);
   background-color: #fff;
+   text-align: left;
+  align-items: flex-start;
+  
+  
 }
 .title-text-4{
   font-family: "Mona Sans";
   font-size: 20px;
   font-weight: 400;
+  text-align: left;
+  }
+  .title-icon {
+  justify-content: flex-start;}
+
+.tab-container {
+  display: grid;
+  width: 1158px;
+  row-gap: 40px;
+  column-gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 251px;
+  }
+
+.tab-button1 {
+  width: 100%;
 }
-.tab-button1{
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: left;
+
+.small-text {
+  max-width: 100%;
   text-align: left;
 }
-}
+
 

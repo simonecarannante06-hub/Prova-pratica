@@ -59,3 +59,13 @@ desktopMedia.addEventListener('change', function () {
   else if (desktopMedia.matches && focusOnButton) navigationPanel.querySelector('a').focus();
   else if (!desktopMedia.matches && focusInNavigation) navigationButton.focus();
 });
+
+const buttons = document.querySelectorAll(".button-tertiary");
+const image = document.querySelector("#main-image");
+
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    const newImage = button.dataset.image;
+    image.src = newImage;
+  });
+});
