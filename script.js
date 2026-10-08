@@ -1,7 +1,17 @@
+const buttons = document.querySelectorAll(".button-tertiary");
+const image = document.querySelector("#main-image");
+
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    const newImage = button.dataset.image;
+    image.src = newImage;
+  });
+});
 // Per il desktop troviamo gli elementi e leggiamo la larghezza
 const navigationButton = document.querySelector('.navigation-toggle');
 const navigationLabel = document.querySelector('.navigation-label');
 const navigationPanel = document.querySelector('.navigation-panel');
+if (navigationButton && navigationLabel && navigationPanel) {
 const desktopMedia = window.matchMedia('(min-width: 1000px)');
 const supportsNavigation = 'popover' in HTMLElement.prototype &&
   CSS.supports('top', 'anchor(bottom)') &&
@@ -44,28 +54,30 @@ navigationPanel.addEventListener('click', function (event) {
   if (supportsNavigation && navigationPanel.matches(':popover-open')) navigationPanel.hidePopover();
   // Il link continua ad aggiornare il frammento e a scorrere con il comportamento HTML.
 });
-document.querySelector('.skip-link').addEventListener('click', function () {
-  document.querySelector('#top').focus();
-});
+const skipLink = document.querySelector('.skip-link');
+
+if (skipLink) {
+  skipLink.addEventListener('click', function () {
+    document.querySelector('#top').focus();
+  });
+}
+
 
 // Bonus accessibilità: se cambia il breakpoint, manteniamo il focus dove serve
 desktopMedia.addEventListener('change', function () {
+
   if (!supportsNavigation) return;
+
   const focused = document.activeElement;
   const focusInNavigation = navigationPanel.contains(focused);
   const focusOnButton = focused === navigationButton;
+
   updateNavigationLayout();
+
   if (desktopMedia.matches && focusInNavigation) focused.focus();
   else if (desktopMedia.matches && focusOnButton) navigationPanel.querySelector('a').focus();
   else if (!desktopMedia.matches && focusInNavigation) navigationButton.focus();
+
 });
 
-const buttons = document.querySelectorAll(".button-tertiary");
-const image = document.querySelector("#main-image");
-
-buttons.forEach(button => {
-  button.addEventListener("click", () => {
-    const newImage = button.dataset.image;
-    image.src = newImage;
-  });
-});
+}

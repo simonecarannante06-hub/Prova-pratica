@@ -5,9 +5,9 @@
 }
 
 img {
-  display: inline-block;
+  display: block;
   max-width: 100%;
-  align-self: 0px;
+  height: auto;
 }
 
 @font-face {
@@ -229,36 +229,31 @@ padding: var(--base-size-16);
 }
 
 .image-hero{
-  width: 1280px;
-  height: 1115px;
+ width: 100%;
+  max-width: 1158px;
+  height: auto;
   border-radius: var(--brand-borderRadius-medium);
-  border:1px;
-  padding-top: var(--base-size-24);
-
 }
-.image-hero2{
-  width: 1280px;
-  height: 1115px;
-  border-radius: var(--brand-borderRadius-medium);
-  border:1px;
-  padding-top: var(--base-size-24);
 
+.image-hero2{
+ width: 100%;
+  max-width: 1158px;
+  height: auto;
+  border-radius: var(--brand-borderRadius-medium);
 }
 .image-hero3{
-  width: 1280px;
-  height: 1115px;
+ width: 100%;
+  max-width: 1158px;
+  height: auto;
   border-radius: var(--brand-borderRadius-medium);
-  border:1px;
-  padding-top: var(--base-size-24);
-
 }
-.button-tertiary{
+
+
+.button-tertiary {
   border: var(--brand-borderWidth-thin);
   background-color: #fff;
-   text-align: left;
+  text-align: left;
   align-items: flex-start;
-  
-  
 }
 .title-text-4{
   font-family: "Mona Sans";
@@ -271,12 +266,17 @@ padding: var(--base-size-16);
 
 .tab-container {
   display: grid;
-  width: 1158px;
+  max-width: 1158px;
+  width: 100%;
   row-gap: 40px;
   column-gap: 40px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 251px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+@media (max-width: 999px) {
+  .tab-container {
+    grid-template-columns: 1fr;
   }
+}
 
 .tab-button1 {
   width: 100%;
@@ -286,5 +286,4 @@ padding: var(--base-size-16);
   max-width: 100%;
   text-align: left;
 }
-
 
