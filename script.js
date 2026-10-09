@@ -7,7 +7,12 @@ buttons.forEach(button => {
 
     const newImage = button.dataset.image;
 
-    image.src = newImage;
+    image.style.opacity = "0";
+
+    setTimeout(() => {
+      image.src = newImage;
+      image.style.opacity = "1";
+    }, 200);
 
     buttons.forEach(btn => {
       btn.classList.remove("active");
@@ -15,7 +20,7 @@ buttons.forEach(button => {
 
     button.classList.add("active");
 
-  });
+});
 
 });
 // Per il desktop troviamo gli elementi e leggiamo la larghezza
@@ -92,11 +97,3 @@ desktopMedia.addEventListener('change', function () {
 });
 
 }
-button.addEventListener("click", () => {
-  image.style.opacity = "0";
-
-  setTimeout(() => {
-    image.src = button.dataset.image;
-    image.style.opacity = "1";
-  }, 200);
-});
