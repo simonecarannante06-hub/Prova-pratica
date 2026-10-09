@@ -179,9 +179,15 @@ body {
   padding-top: 24px;
   font-size: 16px;
   font-family: "Mona Sans";
-  white-space: nowrap;
+  white-space: normal;
   gap: 12px;
 }
+@media (min-width: 1000px) {
+  .info-item {
+    white-space: nowrap;
+  }
+}
+
 .project-biography {
   display: flex;
   gap: 48px;
@@ -254,6 +260,13 @@ padding: var(--base-size-16);
   background-color: #fff;
   text-align: left;
   align-items: flex-start;
+}
+.button-tertiary .line rect {
+  fill: #E4EBE6;
+}
+
+.button-tertiary.active .line rect {
+  fill: #08872B !important;
 }
 .title-text-4{
   font-family: "Mona Sans";

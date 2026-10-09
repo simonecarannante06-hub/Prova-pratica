@@ -2,10 +2,21 @@ const buttons = document.querySelectorAll(".button-tertiary");
 const image = document.querySelector("#main-image");
 
 buttons.forEach(button => {
+
   button.addEventListener("click", () => {
+
     const newImage = button.dataset.image;
+
     image.src = newImage;
+
+    buttons.forEach(btn => {
+      btn.classList.remove("active");
+    });
+
+    button.classList.add("active");
+
   });
+
 });
 // Per il desktop troviamo gli elementi e leggiamo la larghezza
 const navigationButton = document.querySelector('.navigation-toggle');
