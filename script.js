@@ -7,12 +7,7 @@ buttons.forEach(button => {
 
     const newImage = button.dataset.image;
 
-    image.style.opacity = "0";
-
-    setTimeout(() => {
-      image.src = newImage;
-      image.style.opacity = "1";
-    }, 200);
+    image.src = newImage;
 
     buttons.forEach(btn => {
       btn.classList.remove("active");
@@ -20,9 +15,14 @@ buttons.forEach(button => {
 
     button.classList.add("active");
 
-});
+  });
 
 });
+
+
+
+
+
 // Per il desktop troviamo gli elementi e leggiamo la larghezza
 const navigationButton = document.querySelector('.navigation-toggle');
 const navigationLabel = document.querySelector('.navigation-label');
