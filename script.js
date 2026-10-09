@@ -92,3 +92,11 @@ desktopMedia.addEventListener('change', function () {
 });
 
 }
+button.addEventListener("click", () => {
+  image.style.opacity = "0";
+
+  setTimeout(() => {
+    image.src = button.dataset.image;
+    image.style.opacity = "1";
+  }, 200);
+});

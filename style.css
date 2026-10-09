@@ -255,19 +255,7 @@ padding: var(--base-size-16);
 }
 
 
-.button-tertiary {
-  border: var(--brand-borderWidth-thin);
-  background-color: #fff;
-  text-align: left;
-  align-items: flex-start;
-}
-.button-tertiary .line rect {
-  fill: #E4EBE6;
-}
 
-.button-tertiary.active .line rect {
-  fill: #08872B !important;
-}
 .title-text-4{
   font-family: "Mona Sans";
   font-size: 20px;
@@ -284,7 +272,9 @@ padding: var(--base-size-16);
   row-gap: 40px;
   column-gap: 40px;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 40px;
 }
+
 @media (max-width: 999px) {
   .tab-container {
     grid-template-columns: 1fr;
@@ -300,3 +290,30 @@ padding: var(--base-size-16);
   text-align: left;
 }
 
+.button-tertiary {
+  width: 100%;
+  border: none;
+  background-color: #fff;
+  text-align: left;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #E4EBE6;
+  margin-bottom: 20px;
+}
+
+.button-tertiary.active .line {
+  background-color: #08872B;
+}
+.image-mito {
+  transition: opacity 0.2s ease;
+}
+.icon svg path {
+  fill: #A4AEA6 !important;
+}
+
+.button-tertiary.active .icon svg path {
+  fill: #08872B !important;
+}
