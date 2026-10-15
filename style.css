@@ -230,8 +230,6 @@ body {
   color: var(--brand-color-text-muted);
   padding: var(--base-size-16);
   padding-bottom: var(--base-size-24);
-  padding-left: var(--spacing-64);
-  padding-right: var(--spacing-64);
 }
 
 .image-hero {
@@ -309,8 +307,6 @@ body {
 }
 .image-mito {
   transition: opacity 0.2s ease;
-  max-width: 1158px;
-  height: auto;
 }
 .icon svg path {
   fill: #a4aea6 !important;
@@ -324,7 +320,7 @@ body {
     padding: 20px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 502px) {
   .tab {
     display: none;
   }
