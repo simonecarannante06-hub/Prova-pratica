@@ -814,3 +814,87 @@ body {
 .chapters a {
     color: inherit;
 }
+.identity {
+  padding: 88px 0;
+  background: #fff;
+}
+
+.identity-intro {
+  max-width: 560px;
+  margin-bottom: 72px;
+}
+
+.identity-intro .eyebrow {
+  justify-content: flex-start;
+  margin-bottom: 24px;
+}
+
+.identity-intro h2 {
+  font-size: 40px;
+  line-height: 1.15;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 24px;
+}
+
+.identity-text {
+  max-width: 500px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #58635b;
+}
+/* Identity section */
+
+.identity {
+  width: 100%;
+  padding: 88px 80px;
+}
+
+.identity-intro {
+  max-width: 800px;
+  margin-bottom: 80px;
+}
+
+.identity-intro h2 {
+  font-size: 40px;
+  line-height: 1.1;
+  margin: 16px 0 24px;
+}
+
+.identity-intro p:last-child {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+.identity-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+
+.identity-image img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+}
+
+
+.identity-content {
+  max-width: 450px;
+}
+
+
+.identity-content h3 {
+  font-size: 32px;
+  line-height: 1.2;
+  margin: 16px 0 24px;
+}
+
+
+.identity-content p:last-child {
+  font-size: 16px;
+  line-height: 1.6;
+}

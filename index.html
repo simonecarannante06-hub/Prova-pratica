@@ -8,10 +8,47 @@
     <script src="./script.js" defer></script>
   </head>
 
-  <body>
-    <header></header>
-    <main>
-      <section class="hero">
+ <body>
+  <header></header>
+
+  <main>
+<a class="skip-link" href="#top">Vai al contenuto</a>
+
+<header class="navigation">
+  <div class="navigation-content">
+    <div class="navigation-brand">
+      <a class="navigation-logo" href="https://github.com/education" aria-label="GitHub Education">
+        <span class="navigation-back-arrow" aria-hidden="true">‹</span>
+        <img src="assets/images/github-mark.svg" width="24" height="24" alt="" />
+      </a>
+
+      <a class="navigation-title" href="#top">
+        GitHub <span>Student Stories</span>
+      </a>
+    </div>
+
+    <div class="navigation-menu">
+      <button class="navigation-toggle" type="button" aria-label="Menu dei capitoli" popovertarget="navigation-panel">
+        <img class="navigation-icon navigation-icon-open" src="assets/images/menu.svg" width="16" height="16" alt="" aria-hidden="true" />
+        <img class="navigation-icon navigation-icon-close" src="assets/images/close.svg" width="16" height="16" alt="" aria-hidden="true" />
+        <span class="navigation-label">Menu dei capitoli</span>
+      </button>
+
+      <nav id="navigation-panel" class="navigation-panel" popover="auto" aria-label="Capitoli della storia">
+        <ul class="navigation-list">
+          <li><a href="#concept"><span>Concept</span></a></li>
+          <li><a href="#sitemap"><span>Sitemap</span></a></li>
+          <li><a href="#assets"><span>Assets</span></a></li>
+          <li><a href="#prototipi"><span>Prototipi</span></a></li>
+          <li><a href="#highlights"><span>Highlights</span></a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </div>
+</header>
+
+  <section class="hero">
         <div class="hero-content container">
           <p class="eyebrow">
             Simone Carannante · UI/UX Design · 2026
@@ -166,7 +203,73 @@
 
 
   </div>
+<section id="concept" class="identity">
 
+  <div class="container">
+
+    <div class="identity-intro">
+
+      <p class="eyebrow">
+        THIS IS A TEXT CURSOR ANIMATION
+        <svg
+          class="eyebrow-cursor"
+          width="8"
+          height="10"
+          viewBox="0 0 8 10"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <rect width="8" height="10" fill="#5FED83"/>
+        </svg>
+      </p>
+
+      <h2 class="heading heading-size-1">
+        Un'identità che cambia con la storia
+      </h2>
+
+      <p class="text-size-200 identity-text">
+        Ogni capitolo mantiene la stessa logica editoriale, ma adotta colori,
+        tipografia e immagini legati al proprio contesto.
+      </p>
+
+    </div>
+<article class="identity-card">
+
+  <div class="identity-image">
+
+    <img
+      src="assets/images/argentina-card.png"
+      alt="Diego Maradona con la Coppa del Mondo">
+
+  </div>
+
+  <div class="identity-info">
+
+    <p class="eyebrow">
+      THIS IS A TEXT CURSOR ANIMATION
+      <svg
+        class="eyebrow-cursor"
+        width="8"
+        height="10"
+        viewBox="0 0 8 10"
+        fill="none"
+        xmlns="assets/images/Frame.svg ">
+        <rect width="8" height="10" fill="#5FED83"/>
+      </svg>
+    </p>
+
+    <h3>Azzurro e bianco, tono nazionale</h3>
+
+    <p>
+      I colori della Selección come simbolo identitario.
+      Un'estetica che appartiene a tutto un paese.
+    </p>
+
+  </div>
+
+</article>
+  </div>
+
+</section>
 </section>
     <section class="case-study">
       <p class=" eyebrow-mito"> Dal mito all'uomo
