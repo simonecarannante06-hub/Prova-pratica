@@ -886,15 +886,208 @@ body {
   max-width: 450px;
 }
 
+.identity-eyebrow {
+  font-family: "Mona Sans Mono";
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #58635b;
+  margin-bottom: 20px;
+}
 
 .identity-content h3 {
+  font-family: "Mona Sans";
   font-size: 32px;
+  font-weight: 400;
   line-height: 1.2;
-  margin: 16px 0 24px;
+  margin-bottom: 24px;
+  color: #0D3B6E;
+}
+
+.identity-content p:last-child {
+  font-family: "Mona Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #2A5A8A;
 }
 
 
+.identity {
+  margin-top: 88px;
+}
+
+.identity-intro {
+  margin-bottom: 64px;
+}
+
+.identity-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+
+.identity-card {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.identity-image {
+  width: 100%;
+  height: 100%;
+}
+
+.identity-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.identity-content {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 32%;
+  background: #DDE8F0;
+  padding: 48px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.identity-eyebrow {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #66757d;
+}
+
+.identity-content h3 {
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
 .identity-content p:last-child {
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.5;
+}
+
+.identity-card{
+  position: relative;
+  width: 100%;
+  height: 480px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.identity-image {
+  position: absolute;
+  inset: 0;
+}
+
+.identity-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.identity-content {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  width: 320px;
+  height: 100%;
+  background: #DDE8F0;
+  padding: 48px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.identity-card.reverse .identity-content {
+  left: 0;
+  right: auto;
+}
+
+.identity-card.reverse .identity-image {
+  margin-left: auto;
+}
+
+/* ARGENTINA */
+
+.argentina .identity-content {
+  background: #DDE8F0;
+}
+
+.argentina .identity-eyebrow {
+  color:  var(--color-muted);
+}
+
+.argentina .identity-content h3 {
+  color: #003b7a;
+}
+
+.argentina .identity-content p:last-child {
+  color: #2A5A8A;
+}
+
+
+/* BOCA JUNIORS */
+
+.boca .identity-content {
+  background: #1A2B5E;
+}
+
+.boca .identity-eyebrow {
+  color: #F7C900;
+}
+
+.boca .identity-content h3 {
+  color: #F7C900;
+}
+
+.boca .identity-content p:last-child {
+  color: #BDC9E8;
+}
+
+
+/* NAPOLI */
+
+.napoli .identity-content {
+  background: #0A5A8C;
+}
+
+.napoli .identity-eyebrow {
+  color: #ffffff;
+}
+
+.napoli .identity-content h3 {
+  color: #ffffff;
+}
+
+.napoli .identity-content p:last-child {
+  color: #C8E0F4;
+}
+
+
+/* GALLERY */
+
+.gallery .identity-content {
+  background: #F2F5F3;
+}
+
+.gallery .identity-eyebrow {
+  color: var(--color-muted);
+}
+
+.gallery .identity-content h3 {
+  color: black;
+}
+
+.gallery .identity-content p:last-child {
+  color: #58635B;
 }
