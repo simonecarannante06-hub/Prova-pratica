@@ -1225,6 +1225,428 @@ body {
 
 }
 .tools-intro .eyebrow {
+  justify-content: flex-start;
   margin-left: 0;
   text-align: left;
+}
+@media (min-width: 1000px) {
+  .navigation-panel:not([popover]) {
+    display: block;
+  }
+}
+/* OPEN SECTION */
+
+.open-section {
+  padding-top: 152px;
+  padding-bottom: 120px;
+}
+
+
+.open-intro {
+  max-width: 720px;
+  margin-bottom: 64px;
+}
+
+
+.open-intro .eyebrow {
+  justify-content: flex-start;
+  margin-bottom: 24px;
+}
+
+
+.open-intro h2 {
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+
+.open-intro .section-description {
+  max-width: 560px;
+}
+
+
+.open-intro .story-link {
+  margin-top: 24px;
+}
+
+
+/* CARDS */
+
+.open-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 440px);
+  gap: 32px;
+}
+
+
+.open-card {
+  width: 440px;
+  height: 180px;
+
+  padding: 32px;
+
+  border: 1px solid #d9ddd9;
+  border-radius: 24px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.open-card .tool-icon {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 16px;
+}
+
+
+.open-card .tool-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+.open-card h3 {
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+
+.open-card p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #58635b;
+}
+
+
+/* NOTA FINALE */
+
+.open-section .technical-note {
+  margin-top: 48px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+
+  .open-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .open-card {
+    width: 100%;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .open-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+
+  .open-intro h2 {
+    font-size: 32px;
+  }
+
+
+  .open-card {
+    height: auto;
+    min-height: 180px;
+  }
+
+}
+
+/* RESPONSIVE COMPARISON SECTION */
+
+.responsive-comparison {
+  padding: 152px 0;
+  background-color: #fff;
+}
+
+/* INTESTAZIONE */
+
+.comparison-intro {
+  margin-bottom: 100px;
+}
+
+.comparison-intro .eyebrow {
+  justify-content: flex-start;
+  margin-bottom: 24px;
+}
+
+.comparison-intro h2 {
+  font-family: var(--font-body);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.1;
+  color: #000;
+  margin-bottom: 16px;
+}
+
+.comparison-intro .text-size-200 {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #58635b;
+}
+
+/* CONFRONTO DESKTOP / MOBILE */
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 535px 268px;
+  gap: 30px;
+  align-items: start;
+}
+
+.comparison-item {
+  min-width: 0;
+}
+
+.comparison-item h3 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 16px;
+  color: #000;
+}
+
+.comparison-item img {
+  display: block;
+  width: 100%;
+  height: 334px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 8px;
+}
+
+.comparison-item p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #58635b;
+  margin-top: 16px;
+}
+
+/* PRINCIPI CHIAVE */
+
+.comparison-principles {
+  margin-top: 24px;
+}
+
+.comparison-principles h3 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 24px;
+  color: #000;
+}
+
+.comparison-principles ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.comparison-principles li {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+}
+
+.comparison-principles li::before {
+  content: "→ ";
+}
+
+/* NOTA TECNICA */
+
+.comparison-note {
+  margin-top: 40px;
+  padding: 16px;
+  background-color: #f2f4f2;
+  border: 1px solid #e2e8e3;
+  border-radius: 8px;
+}
+
+.comparison-note h3 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.comparison-note p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #58635b;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+  .responsive-comparison {
+    padding: 100px 24px;
+  }
+
+  .comparison-grid {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .comparison-intro {
+    margin-bottom: 72px;
+  }
+
+  .comparison-item img {
+    height: 300px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .responsive-comparison {
+    padding: 80px 0;
+  }
+
+  .comparison-intro {
+    margin-bottom: 56px;
+  }
+
+  .comparison-intro h2 {
+    font-size: 32px;
+  }
+
+  .comparison-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .comparison-desktop {
+    max-width: 535px;
+  }
+
+  .comparison-mobile {
+    max-width: 268px;
+  }
+
+  .comparison-desktop img {
+    height: auto;
+    aspect-ratio: 535 / 334;
+  }
+
+  .comparison-mobile img {
+    height: 334px;
+  }
+
+  .comparison-principles {
+    margin-top: 48px;
+  }
+
+  .comparison-note {
+    margin-top: 40px;
+  }
+}
+
+/* FINAL CASE STUDY SECTION */
+
+.final-case-study {
+  padding-top: 152px;
+  padding-bottom: 148px;
+  background-color: #fff;
+}
+
+/* CONTENUTO CENTRALE */
+
+.final-case-study-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* EYEBROW */
+
+.final-case-study .eyebrow {
+  justify-content: center;
+  margin-bottom: 20px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 400;
+  color: #58635b;
+}
+
+/* TITOLO */
+
+.final-case-study h2 {
+  max-width: 400px;
+  font-family: var(--font-body);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: #000;
+  margin-bottom: 16px;
+}
+
+/* DESCRIZIONE */
+
+.final-case-study-description {
+  max-width: 400px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #58635b;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+  .final-case-study {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .final-case-study {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .final-case-study-content {
+    padding: 0 16px;
+  }
+
+  .final-case-study h2 {
+    font-size: 26px;
+    max-width: 340px;
+  }
+
+  .final-case-study-description {
+    font-size: 14px;
+    max-width: 340px;
+  }
+
 }
