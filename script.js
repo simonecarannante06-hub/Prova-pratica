@@ -201,13 +201,4 @@ if (navigationButton && navigationLabel && navigationPanel) {
   });
 
 }
-const navigationPanel = document.querySelector(".navigation-panel");
-const navigationToggle = document.querySelector(".navigation-toggle");
 
-if (navigationPanel && navigationToggle) {
-  navigationToggle.addEventListener("click", () => {
-    if (navigationPanel.matches(":popover-open")) {
-      navigationPanel.hidePopover();
-    }
-  });
-}
