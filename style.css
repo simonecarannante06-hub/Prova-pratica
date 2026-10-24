@@ -1074,7 +1074,6 @@ body {
 }
 
 
-/* GALLERY */
 
 .gallery .identity-content {
   background: #F2F5F3;
@@ -1091,7 +1090,6 @@ body {
 .gallery .identity-content p:last-child {
   color: #58635B;
 }
-/* TOOLS SECTION */
 
 .tools-section {
   padding: 120px 0;
@@ -1116,7 +1114,6 @@ body {
 }
 
 
-/* GRID */
 
 .tools-grid {
   display: grid;
@@ -1125,7 +1122,6 @@ body {
 }
 
 
-/* CARD */
 
 .tool-card {
   display: flex;
@@ -1176,7 +1172,6 @@ body {
 }
 
 
-/* NOTA FINALE */
 
 .technical-note {
   margin-top: 48px;
@@ -1188,7 +1183,6 @@ body {
 }
 
 
-/* TABLET */
 
 @media (max-width: 1100px) {
 
@@ -1199,7 +1193,6 @@ body {
 }
 
 
-/* MOBILE */
 
 @media (max-width: 700px) {
 
@@ -1234,7 +1227,6 @@ body {
     display: block;
   }
 }
-/* OPEN SECTION */
 
 .open-section {
   padding-top: 152px;
@@ -1272,7 +1264,6 @@ body {
 }
 
 
-/* CARDS */
 
 .open-grid {
   display: grid;
@@ -1325,14 +1316,12 @@ body {
 }
 
 
-/* NOTA FINALE */
 
 .open-section .technical-note {
   margin-top: 48px;
 }
 
 
-/* RESPONSIVE */
 
 @media (max-width: 1000px) {
 
@@ -1368,14 +1357,12 @@ body {
 
 }
 
-/* RESPONSIVE COMPARISON SECTION */
 
 .responsive-comparison {
   padding: 152px 0;
   background-color: #fff;
 }
 
-/* INTESTAZIONE */
 
 .comparison-intro {
   margin-bottom: 100px;
@@ -1401,7 +1388,6 @@ body {
   color: #58635b;
 }
 
-/* CONFRONTO DESKTOP / MOBILE */
 
 .comparison-grid {
   display: grid;
@@ -1438,7 +1424,6 @@ body {
   margin-top: 16px;
 }
 
-/* PRINCIPI CHIAVE */
 
 .comparison-principles {
   margin-top: 24px;
@@ -1471,7 +1456,7 @@ body {
   content: "→ ";
 }
 
-/* NOTA TECNICA */
+
 
 .comparison-note {
   margin-top: 40px;
@@ -1495,7 +1480,6 @@ body {
   color: #58635b;
 }
 
-/* TABLET */
 
 @media (max-width: 900px) {
 
@@ -1517,7 +1501,7 @@ body {
   }
 }
 
-/* MOBILE */
+
 
 @media (max-width: 700px) {
 
@@ -1564,15 +1548,13 @@ body {
   }
 }
 
-/* FINAL CASE STUDY SECTION */
-
 .final-case-study {
   padding-top: 152px;
   padding-bottom: 148px;
   background-color: #fff;
 }
 
-/* CONTENUTO CENTRALE */
+
 
 .final-case-study-content {
   display: flex;
@@ -1581,7 +1563,7 @@ body {
   text-align: center;
 }
 
-/* EYEBROW */
+
 
 .final-case-study .eyebrow {
   justify-content: center;
@@ -1592,7 +1574,7 @@ body {
   color: #58635b;
 }
 
-/* TITOLO */
+
 
 .final-case-study h2 {
   max-width: 400px;
@@ -1604,7 +1586,7 @@ body {
   margin-bottom: 16px;
 }
 
-/* DESCRIZIONE */
+
 
 .final-case-study-description {
   max-width: 400px;
@@ -1615,7 +1597,7 @@ body {
   color: #58635b;
 }
 
-/* TABLET */
+
 
 @media (max-width: 900px) {
 
@@ -1626,7 +1608,7 @@ body {
 
 }
 
-/* MOBILE */
+
 
 @media (max-width: 700px) {
 
@@ -1649,4 +1631,331 @@ body {
     max-width: 340px;
   }
 
+}
+
+
+
+.site-footer {
+  width: 100%;
+  background-color: #f2f5f3;
+  color: #000;
+}
+
+
+
+.footer-top {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: start;
+  min-height: 168px;
+  padding: 50px 0 32px;
+}
+
+
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.footer-brand > a img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer-links a {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 400;
+  color: #58635b;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #000;
+}
+
+
+
+.footer-title {
+  align-self: center;
+  justify-self: center;
+  font-family: var(--font-body);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #58635b;
+  white-space: nowrap;
+}
+
+
+
+.footer-back-top {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+  gap: 16px;
+  color: #000;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.footer-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #d4dcd6;
+  border-radius: 6px;
+  font-size: 28px;
+  line-height: 1;
+  transition: background-color 0.2s ease;
+}
+
+.footer-back-top:hover .footer-arrow {
+  background-color: #e3e9e5;
+}
+
+
+
+.footer-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #d4dcd6;
+}
+
+
+
+.footer-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: start;
+  min-height: 140px;
+  padding: 32px 0 40px;
+}
+
+
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.footer-copyright {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 400;
+  color: #58635b;
+  white-space: nowrap;
+}
+
+
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+.footer-social img {
+  display: block;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+
+}
+
+.footer-social a:hover img {
+  opacity: 0.6;
+}
+
+
+
+.footer-figma-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  align-self: center;
+
+  padding: 12px 20px;
+
+  background-color: #08872b;
+  color: #fff;
+
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+
+  text-decoration: none;
+  border-radius: 6px;
+
+  
+}
+
+.footer-figma-button:hover {
+  background-color: #066b22;
+}
+
+
+
+.site-footer a:focus-visible {
+  outline: 3px solid #08872b;
+  outline-offset: 4px;
+}
+
+
+@media (max-width: 1000px) {
+
+  .site-footer > .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .footer-title {
+    font-size: 32px;
+  }
+
+  .footer-social {
+    gap: 14px;
+  }
+
+}
+
+
+
+@media (max-width: 700px) {
+
+  .site-footer > .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 40px 0;
+  }
+
+  .footer-brand {
+    gap: 24px;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .footer-title {
+    justify-self: start;
+    font-size: 32px;
+    white-space: normal;
+  }
+
+  .footer-back-top {
+    justify-self: start;
+  }
+
+  .footer-bottom {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 32px 0 40px;
+  }
+
+  .footer-info {
+    gap: 24px;
+  }
+
+  .footer-social {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .footer-figma-button {
+    justify-self: start;
+  }
+
+}
+
+
+
+.footer-brand > a img {
+  filter: brightness(0);
+}
+/* Frecce nascoste su desktop */
+.tab-arrow {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  .button-tertiary {
+    position: relative;
+    width: 100%;
+    padding-right: 28px;
+    cursor: pointer;
+  }
+
+  .title-icon {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .title-icon .icon {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+  }
+
+  .title-text-4 {
+    flex: 1;
+    min-width: 0;
+    text-align: left;
+  }
+
+  .tab-arrow {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 2px;
+    width: 16px;
+    height: 16px;
+    
+  }
+
+  .tab-button1.open .tab-arrow {
+    transform: rotate(180deg);
+  }
+
+  .tab-button1 .tab {
+    display: none;
+  }
+
+  .tab-button1.open .tab {
+    display: block;
+  }
 }
